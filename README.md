@@ -3,3 +3,5 @@
 ### To-do List
 This todo-list was created with React. It uses local storage to keep the state during session.
 You can add tasks, mark any task as done or remove it from the list.
+
+[Live](https://zorro-ftw.github.io/todo-list/) preview of the app
