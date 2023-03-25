@@ -1,0 +1,107 @@
+:root {
+  --btn-bg-green: #77e6b6;
+  --todo-bg-green: #bbfbc9;
+  --btn-bg-red: #e67777;
+  --app-bg-gray: #dcdcdc;
+  --input-text-gray: #b9bebe;
+  --todo-id-gray: #919da4;
+}
+
+.App {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--app-bg-gray);
+  padding: 40px 20px;
+  width: fit-content;
+  min-width: 380px;
+  margin-inline: auto;
+  border-radius: 16px;
+  border: none;
+}
+.title {
+  margin-top: 0px;
+}
+.todo {
+  width: 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 16px;
+}
+.todo__info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.todo__info p {
+  margin: 0px;
+}
+
+.todo__info p:nth-child(2) {
+  font-size: 11px;
+  color: var(--todo-id-gray);
+}
+
+.completed {
+  transition: all 0.3s ease-out;
+  background-color: var(--todo-bg-green);
+}
+
+.completed .todo__info p:first-child {
+  text-decoration: line-through;
+}
+
+form {
+  width: 340px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+form input:first-child {
+  line-height: 40px;
+  padding-left: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+form input:first-child::placeholder {
+  color: var(--input-text-gray);
+}
+
+.add-btn {
+  font-weight: bold;
+  padding-block: 12px;
+  background-color: var(--btn-bg-green);
+  border: none;
+  border-radius: 5px;
+}
+
+.done-btn {
+  background-color: var(--btn-bg-green);
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+.delete {
+  background-color: var(--btn-bg-red);
+  margin-left: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.itemlist {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
